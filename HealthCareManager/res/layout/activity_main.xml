@@ -1,0 +1,264 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.healthcaremanager.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender" />
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/gender_arrays" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age (year)" />
+
+            <EditText
+                android:id="@+id/edtAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (cm)" />
+
+            <EditText
+                android:id="@+id/edtHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (kg)" />
+
+            <EditText
+                android:id="@+id/edtWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnCalculateBMR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate BMR" />
+
+            <TextView
+                android:id="@+id/tvDisplayCalculateBMR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="0" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Your menu today"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Food" />
+
+            <Spinner
+                android:id="@+id/spinnerFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/food_arrays" />
+
+            <EditText
+                android:id="@+id/edtFoodNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="quantity"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFoodCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Cal: "
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Vegatable" />
+
+            <Spinner
+                android:id="@+id/spinnerVegatable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/vegatable_arrays" />
+
+            <EditText
+                android:id="@+id/edtVegatableNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="quantity"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvVegatableCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegatable Cal: "
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Drink" />
+
+            <Spinner
+                android:id="@+id/spinnerDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/drink_arrays" />
+
+            <EditText
+                android:id="@+id/edtDrinkNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="quantity"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDrinkCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drink Cal: "
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/btnTotalFoodCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Total Cal: " />
+
+            <TextView
+                android:id="@+id/tvTotalFoodCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textStyle="italic|bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time" />
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/btnAddToMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to menu" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listItem"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:dividerHeight="2dp"
+            android:textColor="#000000" >
+        </ListView>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HealthCareManager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="food_arrays">
+        <item>Plain Bagel</item>
+        <item>White Bread</item>
+        <item>bran Flakes</item>
+        <item>Corn Flakes</item>
+    </string-array>
+    <string-array name="vegatable_arrays">
+        <item>Artichoke hearts</item>
+        <item>Beans, green</item>
+    </string-array>
+    <string-array name="drink_arrays">
+        <item>Regular Latte</item>
+        <item>Starbucks</item>
+    </string-array>
+
+</resources>
